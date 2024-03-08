@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "NanumSquare Neo";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/NanumSquareNeo-cBd.ttf");
+}
+@font-face {
+  font-family: "NanumSquare Neo";
+  font-style: normal;
+  font-weight: 800;
+  src: url("./assets/fonts/NanumSquareNeo-dEb.ttf");
+}
+@font-face {
+  font-family: "NanumSquare Neo";
+  font-style: normal;
+  font-weight: 900;
+  src: url("./assets/fonts/NanumSquareNeo-eHv.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: "NanumSquare Neo";
+  color: white;
+}
+
+html {
+  font-size: 0.6px;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+article {
+  padding: 0 160rem;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  font-size: 20rem;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 800;
+}
+
+p {
+  font-weight: 700;
+}
