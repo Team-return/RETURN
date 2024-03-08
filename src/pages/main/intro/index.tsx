@@ -8,8 +8,7 @@ import "./style.scss";
 gsap.registerPlugin(useGSAP);
 
 const Intro = () => {
-  const introKeywordRef = useRef<HTMLDivElement | null>(null);
-
+    
   useGSAP(() => {
     let timeline = gsap.timeline({
       repeat: -1,
@@ -19,17 +18,17 @@ const Intro = () => {
       },
     });
     timeline
-      .to(introKeywordRef.current, {
+      .to("#introKeywordRef", {
         y: 0,
         delay: 0,
       })
-      .to(introKeywordRef.current, {
+      .to("#introKeywordRef", {
         y: "-144rem",
       })
-      .to(introKeywordRef.current, {
+      .to("#introKeywordRef", {
         y: "-288rem",
       })
-      .to(introKeywordRef.current, {
+      .to("#introKeywordRef", {
         y: 0,
       });
   });
@@ -39,7 +38,7 @@ const Intro = () => {
       <article className="intro">
         <div>
           <div className="intro-keyword">
-            <div ref={introKeywordRef}>
+            <div id="introKeywordRef">
               {IntroKeyword.map(keyword => (
                 <h1>{keyword}</h1>
               ))}
