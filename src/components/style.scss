@@ -1,0 +1,35 @@
+@import "../styles/valuable.scss";
+
+button {
+  border-radius: 100rem;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  cursor: pointer;
+  font-size: 16rem;
+  font-weight: 800;
+}
+
+button.rg {
+  padding: 16rem 24rem;
+}
+
+button.md {
+  padding: 8rem 16rem;
+}
+
+.button {
+  &-ghost {
+    background: none;
+    border: 1rem solid white;
+    font-weight: 700;
+  }
+  &-light {
+    background-color: white;
+    color: $blue50;
+  }
+  &-gray {
+    background-color: $blue10;
+    color: $blue50;
+  }
+}
