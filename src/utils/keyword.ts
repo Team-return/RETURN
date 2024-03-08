@@ -1,0 +1,1 @@
+export const IntroKeyword = ["지속적인", "개선하는", "끊임없이 발전하는"];
