@@ -48,12 +48,13 @@
     width: inherit;
     height: inherit;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   img {
     box-sizing: content-box;
-    border: 5px solid $blue90;
+    border: 2px solid $blue90;
     z-index: 1;
   }
   .gradient {
