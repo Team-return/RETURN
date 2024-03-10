@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import { BlueLogo, WhiteLogo } from "../assets";
 import { jobisUrl, recruitmentUrl, visionUrl } from "../utils/url";
 import "./style.scss";
-// import Button from './button';
 
 const Header = () => {
   const { pathname } = useLocation();

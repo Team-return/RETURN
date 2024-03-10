@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import MemberCard from "../../components/memberCard";
+import MemberCard from "../../components/common/memberCard";
 import { membersInfo } from "../../utils/mumbers";
 import "./style.scss";
 import { useLocation } from "react-router-dom";

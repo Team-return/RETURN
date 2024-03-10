@@ -1,4 +1,4 @@
-import { MemberType } from "../types";
+import { MemberType } from "../../types";
 
 interface PropsType extends MemberType {
   theme?: "dark" | "light";

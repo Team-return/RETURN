@@ -1,14 +1,13 @@
-import { RightArrow } from "../assets";
-import { ButtonTtype } from "../types";
-import "./style.scss";
+import { RightArrow } from "../../assets";
+import { ButtonType } from "../../types";
+import "../style.scss";
 
 const Button = ({
   type = "light",
   size = "rg",
-  icon,
   children,
   ...rest
-}: ButtonTtype) => {
+}: ButtonType) => {
   return (
     <button className={`button-${type} ${size}`} {...rest}>
       {children}

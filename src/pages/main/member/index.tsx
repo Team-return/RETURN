@@ -3,8 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "../../../components/button";
-import MemberCard from "../../../components/memberCard";
+import MemberCard from "../../../components/common/memberCard";
 import { memberIntroduction } from "../../../utils/keyword";
 import { randomMemberList } from "../../../utils/mumbers";
 import "./style.scss";
@@ -58,7 +57,7 @@ const Member = () => {
           <br /> 멤버들을 소개합니다!
         </h2>
         <p className="introduction">{memberIntroduction}</p>
-        <Button
+        {/* <Button
           type="ghost"
           size="rg"
           onClick={() => {
@@ -66,7 +65,7 @@ const Member = () => {
           }}
         >
           팀원들 더 알아보기
-        </Button>
+        </Button> */}
       </div>
       <div className="membersList">
         <div>

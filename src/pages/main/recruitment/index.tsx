@@ -1,4 +1,4 @@
-import Button from "../../../components/button";
+
 import { recruitmentUrl } from "../../../utils/url";
 import "./style.scss";
 
@@ -14,14 +14,14 @@ const Recruitment = () => {
           함께하고 싶다면, 하단의 지원하기 버튼을 통해 지원해주세요.
         </p>
       </section>
-      <Button
+      {/* <Button
         type="ghost"
         onClick={() => {
           window.open(recruitmentUrl);
         }}
       >
         3기 지원하기
-      </Button>
+      </Button> */}
     </section>
   );
 };
