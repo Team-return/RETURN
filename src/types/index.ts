@@ -14,7 +14,7 @@ type JobType =
   | "iOS Engineer"
   | "Android Engineer";
 
-export interface MemberCardType {
+export interface MemberType {
   name: string;
   image: string;
   job: JobType;

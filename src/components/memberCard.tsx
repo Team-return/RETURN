@@ -1,8 +1,12 @@
-import { MemberCardType } from "../types";
+import { MemberType } from "../types";
 
-const MemberCard = ({ name, image, docs, job }: MemberCardType) => {
+interface PropsType extends MemberType {
+  theme?: "dark" | "light";
+}
+
+const MemberCard = ({ name, image, docs, job, theme = "light" }: PropsType) => {
   return (
-    <div className="memberCard">
+    <div className={`memberCard ${theme}`}>
       <img src={image} />
       <div>
         <p className="name">{name}</p>

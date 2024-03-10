@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 import Button from "../../../components/button";
 import MemberCard from "../../../components/memberCard";
 import { memberIntroduction } from "../../../utils/keyword";
-import { membersInfo } from "../../../utils/mumbers";
+import { randomMemberList } from "../../../utils/mumbers";
 import "./style.scss";
 
 gsap.registerPlugin(useGSAP);
@@ -17,7 +17,7 @@ const Member = () => {
         trigger: ".member",
         start: "top+=50% top",
         end: "120% 100vh",
-        scrub: 1,
+        scrub: 0.5,
       },
       y: 0,
     });
@@ -57,15 +57,15 @@ const Member = () => {
       <div className="membersList">
         <div>
           <div id="list1">
-            {membersInfo.map(item => (
-              <MemberCard {...item} />
+            {randomMemberList(1).map(item => (
+              <MemberCard {...item} theme="dark" />
             ))}
           </div>
         </div>
         <div>
           <div id="list2">
-            {membersInfo.reverse().map(item => (
-              <MemberCard {...item} />
+            {randomMemberList(1).map(item => (
+              <MemberCard {...item} theme="dark" />
             ))}
           </div>
         </div>

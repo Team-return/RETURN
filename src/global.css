@@ -43,6 +43,10 @@ main {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 p,
 h1,
 h2,
@@ -52,6 +56,7 @@ h5,
 h6,
 span {
   font-size: 20rem;
+  line-height: 150%;
 }
 
 h1 {

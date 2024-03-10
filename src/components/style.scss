@@ -35,7 +35,7 @@ button.md {
 }
 
 .memberCard {
-  background-color: #1c2845;
+  background-color: rgba(0, 0, 0, 0.03);
   width: 388rem;
   padding: 24rem 28rem;
   border-radius: 16rem;
@@ -49,22 +49,69 @@ button.md {
   p {
     font-size: 18rem;
     font-weight: 700;
-    color: $gray50;
     margin-bottom: 0;
-    line-height: 150%;
   }
   .name {
     font-size: 26rem;
-    color: white;
-    ~ p {
-      color: #2ecc71;
-    }
   }
   > div {
     display: flex;
     gap: 8rem;
     align-items: center;
     margin: 24rem 0 8rem 0;
+  }
+}
+.memberCard.dark {
+  background-color: #1c2845;
+  .name {
+    color: white;
+    ~ p {
+      color: #2ecc71;
+    }
+  }
+  p {
+    color: $gray50;
+  }
+}
+.memberCard.light {
+  background-color: #f7f7f7;
+  width: 100%;
+  padding: 32rem;
+  .name {
+    color: black;
+    ~ p {
+      color: $blue20;
+    }
+  }
+  p {
+    color: $gray70;
+  }
+}
+
+header {
+  width: 100vw;
+  height: 60rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 160rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 42rem;
+  }
+  nav {
+    font-size: 16rem;
+    a {
+      padding: 12rem;
+      color: $gray50;
+    }
+  }
+  .navi-blue {
+    a {
+      color: white;
+    }
   }
 }
 
@@ -76,7 +123,6 @@ footer {
   h6 {
     color: black;
     font-size: 24rem;
-    line-height: 150%;
     margin-top: 16rem;
   }
 }
