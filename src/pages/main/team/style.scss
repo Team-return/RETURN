@@ -52,9 +52,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  div {
-    width: calc(inherit - 1px);
-  }
   img {
     box-sizing: content-box;
     border: 2px solid $blue90;
