@@ -12,15 +12,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Member = () => {
   useGSAP(() => {
-    gsap.to("#list1", {
-      scrollTrigger: {
-        trigger: ".member",
-        start: "top+=50% top",
-        end: "120% 100vh",
-        scrub: 0.5,
-      },
-      y: "-50%",
-    });
     gsap.to("#list2", {
       scrollTrigger: {
         trigger: ".member",
@@ -30,13 +21,22 @@ const Member = () => {
       },
       y: 0,
     });
+    gsap.to("#list1", {
+      scrollTrigger: {
+        trigger: ".member",
+        start: "top+=50% top",
+        end: "120% 100vh",
+        scrub: 0.5,
+      },
+      y: "-50%",
+    });
     gsap.to(".member", {
       scrollTrigger: {
         pin: true,
         trigger: ".member",
         start: "top top",
-        end: "120% end+=80%",
-        endTrigger: "#list",
+        end: "bottom bottom+=10%",
+        endTrigger: "#list1",
       },
     });
   });

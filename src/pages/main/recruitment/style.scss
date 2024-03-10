@@ -1,0 +1,22 @@
+@import "../../../styles/valuable.scss";
+
+.recruitment {
+  width: 100vw;
+  height: 686rem;
+  background-image: url("../../../assets/image/returnFeaturedPhoto.webp");
+  background-size: cover;
+  padding: 160rem;
+  section {
+    max-width: 884rem;
+    margin-bottom: 48rem;
+    h2 {
+      font-size: 56rem;
+      line-height: 150%;
+    }
+    p {
+      font-size: 24rem;
+      line-height: 150%;
+      color: $gray40;
+    }
+  }
+}

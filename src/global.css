@@ -39,6 +39,10 @@ article {
   height: 100vh;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 p,
 h1,
 h2,
