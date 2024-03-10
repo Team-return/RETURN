@@ -38,9 +38,10 @@ const Header = () => {
         >
           3기 지원하기
         </Button>
-        <button className="menu">
+        {/* @todo 디자인 나오면 적용하기 */}
+        {/* <button className="menu">
           <img src={Menu} alt="메뉴" />
-        </button>
+        </button> */}
       </aside>
     </header>
   );

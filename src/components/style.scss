@@ -116,19 +116,20 @@ header {
       color: white;
     }
   }
-  .menu {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 0;
-    background: none;
-    cursor: pointer;
-    > img {
-      width: 24px;
-    }
-  }
+  // @todo 디자인 나오면 적용하기
+  // .menu {
+  //   display: none;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: 32px;
+  //   height: 32px;
+  //   border-radius: 0;
+  //   background: none;
+  //   cursor: pointer;
+  //   > img {
+  //     width: 24px;
+  //   }
+  // }
 }
 
 footer {
