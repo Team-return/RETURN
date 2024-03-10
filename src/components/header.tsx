@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { BlueLogo, WhiteLogo } from "../assets";
 import { jobisUrl, recruitmentUrl, visionUrl } from "../utils/url";
 import "./style.scss";
+import Button from "./common/button";
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -28,7 +29,7 @@ const Header = () => {
         </a>
       </nav>
       <aside>
-        {/* <Button
+        <Button
           size="md"
           type={headerStyle ? "light" : "gray"}
           onClick={() => {
@@ -36,7 +37,7 @@ const Header = () => {
           }}
         >
           3기 지원하기
-        </Button> */}
+        </Button>
         {/* @todo 디자인 나오면 적용하기 */}
         {/* <button className="menu">
           <img src={Menu} alt="메뉴" />

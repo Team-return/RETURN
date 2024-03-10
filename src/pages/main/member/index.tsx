@@ -7,6 +7,7 @@ import MemberCard from "../../../components/common/memberCard";
 import { memberIntroduction } from "../../../utils/keyword";
 import { randomMemberList } from "../../../utils/mumbers";
 import "./style.scss";
+import Button from "../../../components/common/button";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -57,7 +58,7 @@ const Member = () => {
           <br /> 멤버들을 소개합니다!
         </h2>
         <p className="introduction">{memberIntroduction}</p>
-        {/* <Button
+        <Button
           type="ghost"
           size="rg"
           onClick={() => {
@@ -65,7 +66,7 @@ const Member = () => {
           }}
         >
           팀원들 더 알아보기
-        </Button> */}
+        </Button>
       </div>
       <div className="membersList">
         <div>
