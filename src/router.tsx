@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Main from "./pages/main";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import MemberPage from "./pages/mamber";
+import MemberPage from "./pages/member";
 
 export const Router = () => {
   return (
