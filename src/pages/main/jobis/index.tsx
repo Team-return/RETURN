@@ -18,8 +18,7 @@ const Jobis = () => {
       {
         scrollTrigger: {
           trigger: ".jobis",
-          start: "top center",
-          markers: true,
+          start: "top+=20 center",
         },
         x: "10%",
         duration: 3,
