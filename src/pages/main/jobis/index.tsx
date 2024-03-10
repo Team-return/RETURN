@@ -4,6 +4,7 @@ import { ScrollTrigger } from "gsap/all";
 import { JOBISMacBook } from "../../../assets";
 import Button from "../../../components/button";
 import "./style.scss";
+import { jobisUrl } from "../../../utils/url";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -38,7 +39,14 @@ const Jobis = () => {
           학교에서의 취업 프로세스를 자동화하고 학생들과 선생님들, 기업들의 학교
           취업을 보다 편리하게 도와줄 수 있어요.
         </p>
-        <Button type="gray">JOBIS에 대해 알아보기</Button>
+        <Button
+          type="gray"
+          onClick={() => {
+            window.open(jobisUrl);
+          }}
+        >
+          JOBIS에 대해 알아보기
+        </Button>
       </section>
       <div className="macbook">
         <img src={JOBISMacBook} alt="자비스" />

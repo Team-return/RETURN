@@ -6,11 +6,13 @@ import MemberCard from "../../../components/memberCard";
 import { memberIntroduction } from "../../../utils/keyword";
 import { randomMemberList } from "../../../utils/mumbers";
 import "./style.scss";
+import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 const Member = () => {
+  const navi = useNavigate();
   useGSAP(() => {
     gsap.to("#list2", {
       scrollTrigger: {
@@ -50,7 +52,13 @@ const Member = () => {
           <br /> 멤버들을 소개합니다!
         </h2>
         <p className="introduction">{memberIntroduction}</p>
-        <Button type="ghost" size="rg" onClick={() => {}}>
+        <Button
+          type="ghost"
+          size="rg"
+          onClick={() => {
+            navi("/member");
+          }}
+        >
           팀원들 더 알아보기
         </Button>
       </div>
