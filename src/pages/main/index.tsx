@@ -1,4 +1,5 @@
 import Intro from "./intro";
+import Jobis from "./jobis";
 import Member from "./member";
 import Team from "./team";
 
@@ -8,7 +9,7 @@ const Main = () => {
       <Intro />
       <Team />
       <Member />
-      <article></article>
+      <Jobis />
     </>
   );
 };

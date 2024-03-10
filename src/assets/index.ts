@@ -11,3 +11,4 @@ export { default as KANGYONGSU } from "./image/KANGYONGSU.webp";
 export { default as KIMHAONEE } from "./image/KIMHAONEE.webp";
 export { default as LEEHASEONG } from "./image/LEEHASEONG.webp";
 export { default as PARKSIWON } from "./image/PARKSIWON.webp";
+export { default as JOBISMacBook } from "./image/JOBISMacBook.png";

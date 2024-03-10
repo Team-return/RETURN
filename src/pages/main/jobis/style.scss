@@ -1,0 +1,29 @@
+@import "../../../styles/valuable.scss";
+
+.jobis {
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  gap: 48rem;
+  padding-top: 160rem;
+  padding-bottom: 160rem;
+  section {
+    width: 626rem;
+    h2 {
+      color: #000;
+      font-size: 64rem;
+      line-height: 150%;
+    }
+    p {
+      color: $gray60;
+      line-height: 150%;
+      margin: 16rem 0 48rem 0;
+    }
+  }
+  .macbook {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+}
