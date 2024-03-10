@@ -4,26 +4,27 @@
   display: flex;
   justify-content: center;
   gap: 16rem;
+  height: 100%;
   p {
     margin: 0;
   }
-  #list1,
-  #list2 {
+  .list1,
+  .list2 {
     display: flex;
     flex-direction: column;
     gap: 24rem;
   }
-  #list2 {
-    transform: translateY(-50%);
+  .list2 {
+    transform: translateY(calc(100vh - 100%));
   }
   > div {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: relative;
     &::after {
       content: "";
       width: 100%;
-      height: 132rem;
+      height: 132em;
       background: linear-gradient(180deg, #06122f 0%, rgba(6, 18, 47, 0) 100%);
       position: absolute;
       top: 0;
@@ -32,12 +33,42 @@
     &::before {
       content: "";
       width: 100%;
-      height: 132rem;
+      height: 132em;
       position: absolute;
       background: linear-gradient(0deg, #06122f 0%, rgba(6, 18, 47, 0) 100%);
       z-index: 1;
       bottom: 0;
       left: 0;
     }
+  }
+}
+
+@media (max-width: 1650px) {
+  .membersList {
+    > div {
+      font-size: 0.8px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .membersList {
+    > div {
+      font-size: 0.7px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .membersList {
+    > div {
+      font-size: 0.4px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .membersList {
+    display: none;
   }
 }

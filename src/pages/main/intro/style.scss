@@ -1,6 +1,6 @@
 @import "../../../styles/valuable.scss";
 
- .intro {
+.intro {
   background-color: $blue50;
   display: flex;
   justify-content: center;
@@ -9,6 +9,7 @@
   h2 {
     font-size: 96rem;
     text-align: center;
+    word-break: keep-all;
   }
   &-keyword {
     height: 144rem;
@@ -24,11 +25,11 @@
   align-items: center;
   gap: 4rem;
   p {
-    font-size: 16rem;
+    font-size: 16em;
   }
   img {
-    width: 24rem;
-    height: 24rem;
+    width: 24em;
+    height: 24em;
   }
 }
 
@@ -36,4 +37,14 @@
   width: 100vw;
   height: 900rem;
   background: linear-gradient(0deg, #06122f 0%, #08f 100%);
+}
+
+@media (max-width: 426px) {
+  .scroll-hint {
+    font-size: 0.8px;
+    img {
+      width: 30em;
+      height: 30em;
+    }
+  }
 }

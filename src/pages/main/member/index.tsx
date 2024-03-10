@@ -1,36 +1,41 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "../../../components/button";
 import MemberCard from "../../../components/memberCard";
 import { memberIntroduction } from "../../../utils/keyword";
 import { randomMemberList } from "../../../utils/mumbers";
 import "./style.scss";
-import { useNavigate } from "react-router-dom";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 const Member = () => {
   const navi = useNavigate();
+  const listRef = useRef<HTMLDivElement | null>(null);
+
   useGSAP(() => {
-    gsap.to("#list2", {
+    gsap.to(".list1", {
       scrollTrigger: {
         trigger: ".member",
-        start: "top+=50% top",
-        end: "120% 100vh",
+        start: "top+=5% top",
+        endTrigger: ".list1",
+        end: "100% bottom",
+        scrub: 0.5,
+      },
+      y: `${window.innerHeight - listRef!.current!.offsetHeight}px`,
+    });
+    gsap.to(".list2", {
+      scrollTrigger: {
+        trigger: ".member",
+        start: "top+=5% top",
+        endTrigger: ".list1",
+        end: "100% bottom",
         scrub: 0.5,
       },
       y: 0,
-    });
-    gsap.to("#list1", {
-      scrollTrigger: {
-        trigger: ".member",
-        start: "top+=50% top",
-        end: "120% 100vh",
-        scrub: 0.5,
-      },
-      y: "-50%",
     });
     gsap.to(".member", {
       scrollTrigger: {
@@ -38,10 +43,11 @@ const Member = () => {
         trigger: ".member",
         start: "top top",
         end: "bottom bottom+=10%",
-        endTrigger: "#list1",
+        endTrigger: ".list1",
       },
     });
   });
+
   return (
     <article className="member">
       <div>
@@ -64,14 +70,14 @@ const Member = () => {
       </div>
       <div className="membersList">
         <div>
-          <div id="list1">
+          <div className="list1">
             {randomMemberList(1).map(item => (
               <MemberCard {...item} theme="dark" />
             ))}
           </div>
         </div>
         <div>
-          <div id="list2">
+          <div ref={listRef} className="list2">
             {randomMemberList(1).map(item => (
               <MemberCard {...item} theme="dark" />
             ))}

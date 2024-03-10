@@ -1,5 +1,16 @@
 @import "../../../styles/valuable.scss";
 
+@media (max-width: 426px) {
+  .team,
+  .member {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 48rem;
+    > div {
+    }
+  }
+}
+
 .team,
 .member {
   background-color: $blue90;
@@ -28,8 +39,8 @@
 
 .gradientLogo {
   position: relative;
-  width: 354px;
-  height: 206px;
+  width: 354rem;
+  height: 206rem;
   margin: auto;
   overflow: hidden;
   img,

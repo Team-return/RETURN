@@ -7,7 +7,7 @@ const MemberPage = () => {
     <main id="member">
       <div className="headline">
         <h2>
-          <span className="highlight">Team Return</span>의 <br /> 자랑스러운
+          <span className="highlight">Team return</span>의 <br /> 자랑스러운
           멤버들이에요
         </h2>
       </div>

@@ -129,3 +129,14 @@ footer {
     margin-top: 16rem;
   }
 }
+
+@media (max-width: 426px) {
+  footer {
+    padding: 64rem 24px;
+  }
+  button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

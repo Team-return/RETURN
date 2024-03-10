@@ -57,6 +57,7 @@ h6,
 span {
   font-size: 20rem;
   line-height: 150%;
+  word-break: keep-all;
 }
 
 h1 {

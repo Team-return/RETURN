@@ -4,7 +4,7 @@ import { GradientLogo } from "../../../assets";
 import Button from "../../../components/button";
 import { teamIntroduction } from "../../../utils/keyword";
 import "./style.scss";
-import { teamReturnUrl } from "../../../utils/url";
+import { teamReturnUrl, visionUrl } from "../../../utils/url";
 
 gsap.registerPlugin(useGSAP);
 
@@ -41,7 +41,7 @@ const Team = () => {
           type="ghost"
           size="rg"
           onClick={() => {
-            window.open(teamReturnUrl);
+            window.open(visionUrl);
           }}
         >
           Team return 더 알아보기
