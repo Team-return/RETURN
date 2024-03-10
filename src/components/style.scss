@@ -67,3 +67,16 @@ button.md {
     margin: 24rem 0 8rem 0;
   }
 }
+
+footer {
+  width: 100vw;
+  height: 212rem;
+  padding: 64rem 160rem;
+  background-color: $gray30;
+  h6 {
+    color: black;
+    font-size: 24rem;
+    line-height: 150%;
+    margin-top: 16rem;
+  }
+}
