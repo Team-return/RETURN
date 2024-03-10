@@ -35,6 +35,8 @@ html::-webkit-scrollbar {
 
 article {
   padding: 0 160rem;
+  width: 100vw;
+  height: 100vh;
 }
 
 p,

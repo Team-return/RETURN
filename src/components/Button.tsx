@@ -1,7 +1,6 @@
-import React from "react";
-import "./style.scss";
 import { RightArrow } from "../assets";
-import { ButtonTtype } from "../utils/type";
+import { ButtonTtype } from "../types";
+import "./style.scss";
 
 const Button = ({
   type = "light",
