@@ -1,13 +1,6 @@
-$blue20: #687697;
-$blue30: #48a3f5;
-$blue50: #0088ff;
-$blue60: #025eb6;
-$blue80: #1c2845;
-$blue90: #06122f;
+@import "../../../styles/valuable.scss";
 
-.intro {
-  width: 100vw;
-  height: 100vh;
+ .intro {
   background-color: $blue50;
   display: flex;
   justify-content: center;

@@ -33,3 +33,37 @@ button.md {
     color: $blue50;
   }
 }
+
+.memberCard {
+  background-color: #1c2845;
+  width: 388rem;
+  padding: 24rem 28rem;
+  border-radius: 16rem;
+  img {
+    width: 64rem;
+    height: 64rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  p {
+    font-size: 18rem;
+    font-weight: 700;
+    color: $gray50;
+    margin-bottom: 0;
+    line-height: 150%;
+  }
+  .name {
+    font-size: 26rem;
+    color: white;
+    ~ p {
+      color: #2ecc71;
+    }
+  }
+  > div {
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+    margin: 24rem 0 8rem 0;
+  }
+}

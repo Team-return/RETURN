@@ -1,6 +1,5 @@
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
-import { useRef } from "react";
 import { ScrollArrow } from "../../../assets";
 import { IntroKeyword } from "../../../utils/keyword";
 import "./style.scss";
@@ -8,8 +7,19 @@ import "./style.scss";
 gsap.registerPlugin(useGSAP);
 
 const Intro = () => {
-    
   useGSAP(() => {
+    gsap.fromTo(
+      "#scroll-hint",
+      {
+        y: 0,
+      },
+      {
+        duration: 0.5,
+        repeat: -1,
+        yoyo: true,
+        y: 5,
+      }
+    );
     let timeline = gsap.timeline({
       repeat: -1,
       defaults: {
@@ -48,7 +58,7 @@ const Intro = () => {
         </div>
         <div className="scroll-hint">
           <p>스크롤 하여 더 알아보세요!</p>
-          <img src={ScrollArrow} alt="스크롤" />
+          <img id="scroll-hint" src={ScrollArrow} alt="스크롤" />
         </div>
       </article>
       <div className="gradient" />

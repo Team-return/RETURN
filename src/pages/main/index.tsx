@@ -1,4 +1,5 @@
 import Intro from "./intro";
+import Member from "./member";
 import Team from "./team";
 
 const Main = () => {
@@ -6,6 +7,8 @@ const Main = () => {
     <>
       <Intro />
       <Team />
+      <Member />
+      <article></article>
     </>
   );
 };
