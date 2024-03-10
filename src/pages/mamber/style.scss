@@ -33,3 +33,35 @@
     }
   }
 }
+
+@media (max-width: 1024px) {
+  #member {
+    section {
+      .listGrid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  #member {
+    section {
+      .listGrid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+@media (max-width: 426px) {
+  #member {
+    padding: 160rem 24px;
+    .listWrapper {
+      margin-top: 60px;
+    }
+    section {
+      .listGrid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}

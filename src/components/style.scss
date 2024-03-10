@@ -90,7 +90,7 @@ button.md {
 
 header {
   width: 100vw;
-  height: 60rem;
+  height: 60em;
   position: absolute;
   top: 0;
   left: 0;
@@ -99,21 +99,34 @@ header {
   align-items: center;
   justify-content: space-between;
   img {
-    width: 42rem;
+    width: 42em;
   }
   nav {
-    font-size: 16rem;
+    font-size: 16em;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     a {
-      padding: 12rem;
+      padding: 0 1em;
       color: $gray50;
     }
   }
   .navi-blue {
     a {
       color: white;
+    }
+  }
+  .menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 0;
+    background: none;
+    cursor: pointer;
+    > img {
+      width: 24px;
     }
   }
 }
@@ -130,6 +143,18 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  header {
+    font-size: 0.6px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 0.8px;
+  }
+}
+
 @media (max-width: 426px) {
   footer {
     padding: 64rem 24px;
@@ -138,5 +163,11 @@ footer {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  header {
+    padding: 0 24px;
+    nav {
+      display: none;
+    }
   }
 }

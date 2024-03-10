@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { BlueLogo, WhiteLogo } from "../assets";
+import { BlueLogo, Menu, WhiteLogo } from "../assets";
 import Button from "./button";
 import "./style.scss";
 import { jobisUrl, recruitmentUrl, visionUrl } from "../utils/url";
@@ -38,6 +38,9 @@ const Header = () => {
         >
           3기 지원하기
         </Button>
+        <button className="menu">
+          <img src={Menu} alt="메뉴" />
+        </button>
       </aside>
     </header>
   );

@@ -3,6 +3,7 @@ export { default as WhiteLogo } from "./whiteLogo.svg";
 export { default as GradientLogo } from "./icon/gradient_logo.svg";
 export { RightArrow } from "./icon/right_arrow_";
 export { default as ScrollArrow } from "./icon/scroll_arrow.svg";
+export { default as Menu } from "./icon/menu.svg";
 export { default as JOBISMacBook } from "./image/JOBISMacBook.webp";
 export { default as GILGEUNWOO } from "./image/GILGEUNWOO.webp";
 export { default as HONGSEUNGGJAE } from "./image/HONGSEUNGGJAE.webp";
