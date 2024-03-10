@@ -45,7 +45,6 @@
   overflow: hidden;
   img,
   div {
-    width: inherit;
     height: inherit;
     position: absolute;
     top: 50%;
@@ -56,6 +55,9 @@
     box-sizing: content-box;
     border: 2px solid $blue90;
     z-index: 1;
+  }
+  div {
+    width: inherit;
   }
   .gradient {
     width: 250%;
