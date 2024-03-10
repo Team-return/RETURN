@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import MemberCard from "../../components/memberCard";
 import { membersInfo } from "../../utils/mumbers";
 import "./style.scss";
+import { useLocation } from "react-router-dom";
 
 const MemberPage = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <main id="member">
       <div className="headline">
