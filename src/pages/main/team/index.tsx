@@ -9,8 +9,8 @@ import Button from "../../../components/common/button";
 gsap.registerPlugin(useGSAP);
 
 const Team = () => {
-  const bg1 = "linear-gradient(109deg, #00539C 0%, #08f 50%, #00539C 80%)";
-  const bg2 = "linear-gradient(80deg, #08f 0%,  #00539C 50% ,  #08f 100%)";
+  const bg1 = "linear-gradient(109deg, #B8DEFF, #279AFF, #00539C)";
+  const bg2 = "linear-gradient(30deg, #00539C, #279AFF, #B8DEFF)";
 
   useGSAP(() => {
     gsap.fromTo(
@@ -19,7 +19,7 @@ const Team = () => {
         background: bg1,
       },
       {
-        ease: "none",
+        ease: "power1.inOut",
         duration: 2,
         background: bg2,
         repeat: -1,

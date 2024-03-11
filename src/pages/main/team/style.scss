@@ -55,6 +55,7 @@
     box-sizing: content-box;
     border: 2px solid $blue90;
     z-index: 1;
+    height: calc(100% + 5px);
   }
   div {
     width: inherit;

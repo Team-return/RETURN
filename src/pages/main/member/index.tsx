@@ -78,7 +78,7 @@ const Member = () => {
         </div>
         <div>
           <div ref={listRef} className="list2">
-            {randomMemberList(1).map(item => (
+            {randomMemberList(2).map(item => (
               <MemberCard {...item} theme="dark" />
             ))}
           </div>
