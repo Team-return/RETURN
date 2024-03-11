@@ -1,4 +1,4 @@
-
+import { track } from "@vercel/analytics";
 import Button from "../../../components/common/button";
 import { recruitmentUrl } from "../../../utils/url";
 import "./style.scss";
@@ -18,6 +18,7 @@ const Recruitment = () => {
       <Button
         type="ghost"
         onClick={() => {
+          track("지원");
           window.open(recruitmentUrl);
         }}
       >

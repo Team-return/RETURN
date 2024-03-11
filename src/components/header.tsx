@@ -1,8 +1,9 @@
+import { track } from '@vercel/analytics';
 import { Link, useLocation } from "react-router-dom";
 import { BlueLogo, WhiteLogo } from "../assets";
 import { jobisUrl, recruitmentUrl, visionUrl } from "../utils/url";
-import "./style.scss";
 import Button from "./common/button";
+import "./style.scss";
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -33,6 +34,7 @@ const Header = () => {
           size="md"
           type={headerStyle ? "light" : "gray"}
           onClick={() => {
+            track("지원");
             window.open(recruitmentUrl);
           }}
         >
