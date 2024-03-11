@@ -1,10 +1,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { GradientLogo } from "../../../assets";
-import { teamIntroduction } from "../../../utils/keyword";
-import "./style.scss";
-import { teamReturnUrl, visionUrl } from "../../../utils/url";
 import Button from "../../../components/common/button";
+import { teamIntroduction } from "../../../utils/keyword";
+import { visionUrl } from "../../../utils/url";
+import "./style.scss";
 
 gsap.registerPlugin(useGSAP);
 

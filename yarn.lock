@@ -3350,6 +3350,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vercel/analytics@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "@vercel/analytics@npm:1.2.2"
+  dependencies:
+    server-only: "npm:^0.0.1"
+  peerDependencies:
+    next: ">= 13"
+    react: ^18 || ^19
+  peerDependenciesMeta:
+    next:
+      optional: true
+    react:
+      optional: true
+  checksum: 10c0/82c89846356b370574414aa511d5a341535dcc7ba3b0a5eabfc7644df6d52a7b30253247627382faf4a0cc4192715cea718fe91027f7ba35efba80256064a005
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.11.6, @webassemblyjs/ast@npm:^1.11.5":
   version: 1.11.6
   resolution: "@webassemblyjs/ast@npm:1.11.6"
@@ -12475,6 +12492,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"server-only@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "server-only@npm:0.0.1"
+  checksum: 10c0/4704f0ef85da0be981af6d4ed8e739d39bcfd265b9c246a684060acda5642d0fdc6daffc2308e71e2682c5f508090978802eae0a77623c9b90a49f9ae68048d6
+  languageName: node
+  linkType: hard
+
 "set-blocking@npm:^2.0.0":
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
@@ -13286,6 +13310,7 @@ __metadata:
     "@types/node": "npm:^20.11.25"
     "@types/react": "npm:^18.2.64"
     "@types/react-dom": "npm:^18.2.21"
+    "@vercel/analytics": "npm:^1.2.2"
     gsap: "npm:^3.12.5"
     node-sass: "npm:^9.0.0"
     react: "npm:^18.2.0"

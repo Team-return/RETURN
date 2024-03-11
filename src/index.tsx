@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./global.css";
 import "./styles/displaySize.scss";
 import { Router } from "./router";
+import { Analytics } from "@vercel/analytics/react";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -10,5 +11,6 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Router />
+    <Analytics />
   </React.StrictMode>
 );
