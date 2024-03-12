@@ -71,15 +71,15 @@ const Member = () => {
       <div className="membersList">
         <div>
           <div className="list1">
-            {randomMemberList(1).map(item => (
-              <MemberCard {...item} theme="dark" />
+            {randomMemberList(1).map((item, idx) => (
+              <MemberCard {...item} theme="dark" key={idx} />
             ))}
           </div>
         </div>
         <div>
           <div ref={listRef} className="list2">
-            {randomMemberList(2).map(item => (
-              <MemberCard {...item} theme="dark" />
+            {randomMemberList(2).map((item, idx) => (
+              <MemberCard {...item} theme="dark" key={idx} />
             ))}
           </div>
         </div>

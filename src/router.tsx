@@ -3,6 +3,7 @@ import Main from "./pages/main";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import MemberPage from "./pages/member";
+import JobisPage from "./pages/jobis";
 
 export const Router = () => {
   return (
@@ -11,8 +12,7 @@ export const Router = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/member" element={<MemberPage />} />
-        <Route path="" />
-        <Route path="" />
+        <Route path="/jobis" element={<JobisPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

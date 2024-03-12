@@ -7,7 +7,7 @@ interface PropsType extends MemberType {
 const MemberCard = ({ name, image, docs, job, theme = "light" }: PropsType) => {
   return (
     <div className={`memberCard ${theme}`}>
-      <img src={image} />
+      <img src={image} alt="프로필 사진" />
       <div>
         <p className="name">{name}</p>
         <p className="job">{job}</p>

@@ -50,7 +50,7 @@ const Intro = () => {
           <div className="intro-keyword">
             <div id="introKeywordRef">
               {IntroKeyword.map(keyword => (
-                <h1>{keyword}</h1>
+                <h1 key={keyword}>{keyword}</h1>
               ))}
             </div>
           </div>

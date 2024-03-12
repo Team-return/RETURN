@@ -21,11 +21,11 @@ const MemberPage = () => {
       </div>
       <div className="listWrapper">
         {membersInfo.map((list, grade) => (
-          <section>
+          <section key={grade}>
             <h2>{grade + 1}기</h2>
             <div className="listGrid">
-              {list.map(item => (
-                <MemberCard {...item} />
+              {list.map((item, idx) => (
+                <MemberCard {...item} key={idx} />
               ))}
             </div>
           </section>

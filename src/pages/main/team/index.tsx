@@ -49,7 +49,7 @@ const Team = () => {
       </div>
       <div className="logo">
         <div className="gradientLogo" style={{ background: "none" }}>
-          <img src={GradientLogo} alt="" />
+          <img src={GradientLogo} alt="그라데이션로고" />
           <div id="logo" />
         </div>
       </div>

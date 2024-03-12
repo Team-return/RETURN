@@ -41,6 +41,7 @@ article {
 
 main {
   overflow-x: hidden;
+  width: 100vw;
 }
 
 a {
