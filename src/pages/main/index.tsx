@@ -1,8 +1,9 @@
 import Intro from "./intro";
 import Jobis from "./jobis";
 import Member from "./member";
-import Recruitment from "./recruitment";
 import Team from "./team";
+// *지원하기 (지원시즌에만 사용)
+// import Recruitment from "./recruitment";
 
 const Main = () => {
   return (
@@ -11,7 +12,8 @@ const Main = () => {
       <Team />
       <Member />
       <Jobis />
-      <Recruitment />
+      {/* *지원하기 (지원시즌에만 사용)  */}
+      {/* <Recruitment /> */}
     </main>
   );
 };

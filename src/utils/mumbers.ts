@@ -23,11 +23,7 @@ import {
 } from "../assets";
 import { MemberType } from "../types";
 
-//  membersInfo
-//  ┠ 1기
-//  ┃   ┗ [...]
-//  ┠ 2기
-//  ┃   ┗ [...]
+//  membersInfo[기수][멤버]
 
 export const membersInfo: MemberType[][] = [
   [
