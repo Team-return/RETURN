@@ -97,7 +97,7 @@ export const membersInfo: MemberType[][] = [
       name: "정승훈",
       job: "Android Engineer",
       image: JUNGSEUNGHOON,
-      docs: "Deep Dive Study 를 좋아하는 안드로이드 개발자 입니다.",
+      docs: "코딩이 취미인 안드로이드 개발자 정승훈입니다.",
     },
   ],
   [
