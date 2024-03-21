@@ -6,8 +6,6 @@
     flex-direction: column-reverse;
     justify-content: center;
     gap: 48rem;
-    > div {
-    }
   }
 }
 
@@ -37,32 +35,3 @@
   color: $blue50;
 }
 
-.gradientLogo {
-  position: relative;
-  width: 354rem;
-  height: 206rem;
-  margin: auto;
-  overflow: hidden;
-  img,
-  div {
-    height: inherit;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  img {
-    box-sizing: content-box;
-    border: 2px solid $blue90;
-    z-index: 1;
-    height: calc(100% + 5px);
-  }
-  div {
-    width: inherit;
-  }
-  .gradient {
-    width: 250%;
-    border-left: 1px solid $blue90;
-    border-top: 1px solid $blue90;
-  }
-}
