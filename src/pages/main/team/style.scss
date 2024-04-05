@@ -28,10 +28,13 @@
     white-space: pre-wrap;
     margin-bottom: 48px;
   }
+  > .logo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+  }
 }
 
 .highlight {
   font-size: 64rem;
   color: $blue50;
 }
-
