@@ -61,7 +61,7 @@ export const membersInfo: MemberType[][] = [
       name: "강용수",
       job: "Front-end Engineer",
       image: KANGYONGSU,
-      docs: "경험하는 프론트엔드 개발자 강용수입니다.",
+      docs: "사용자가 최우선인 개발자 강용수입니다.",
     },
     {
       name: "강지인",
