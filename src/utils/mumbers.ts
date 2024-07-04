@@ -43,7 +43,7 @@ export const membersInfo: MemberType[][] = [
       name: "강민",
       job: "Back-end Engineer",
       image: KANGMIN,
-      docs: "집중력이 뛰어나고 성실한 개발자입니다.",
+      docs: "집중력이 뛰어나고 성실한 개발자 강민입니다.",
     },
     {
       name: "길근우",
