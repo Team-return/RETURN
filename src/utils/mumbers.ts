@@ -150,11 +150,11 @@ export const membersInfo: MemberType[][] = [
       docs: "계속 성장해 나가는 개발자 박의엘입니다.",
     },
     {
-      name: "양윤호",
-      job: "Android Engineer",
-      image: YANGYUNHO,
-      docs: "끊임없이 발전하는 개발자 양윤호입니다.",
-    },
+      name: "박현아",
+      job: "Front-end Engineer",
+      image: https://avatars.githubusercontent.com/u/128463899?v=4,
+      docs: "추가 예정",
+    }
   ],
 ];
 
