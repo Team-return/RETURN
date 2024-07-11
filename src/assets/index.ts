@@ -27,3 +27,4 @@ export { default as PARKJUYEONG } from "./image/PARKJUYEONG.webp";
 export { default as PARKUIEL } from "./image/PARKUIEL.webp";
 export { default as WONEUNJI } from "./image/WONEUNJI.webp";
 export { default as YANGYUNHO } from "./image/YANGYUNHO.webp";
+export { default as PARKHYEONA } from "./image/PARKHYEONA.webp";
