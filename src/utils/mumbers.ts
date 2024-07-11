@@ -17,7 +17,7 @@ import {
   WONEUNJI,
   LEETAEGYU,
   PARKUIEL,
-  YANGYUNHO,
+  PARKHYEONA,
   PARKJUYEONG,
   KIMEUNO,
 } from "../assets";
@@ -152,9 +152,9 @@ export const membersInfo: MemberType[][] = [
     {
       name: "박현아",
       job: "Front-end Engineer",
-      image: https://avatars.githubusercontent.com/u/128463899?v=4,
+      image: PARKHYEONA,
       docs: "추가 예정",
-    }
+    },
   ],
 ];
 
